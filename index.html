@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bando | Portfolio</title>
+  <style>
+    /* ===== Global Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0f0f0f;
+      color: #f5f5f5;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul { list-style: none; }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #00bcd4, #005a7a);
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+
+    /* ===== Navbar ===== */
+    nav {
+      background: #1a1a1a;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      animation: slideDown 1s ease;
+    }
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      animation: fadeUp 1s ease-in-out;
+    }
+    h2 {
+      color: #00bcd4;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-block;
+      background: #00bcd4;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: 0.3s ease;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .btn:hover {
+      background: #008ba3;
+      transform: scale(1.05);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bando</h1>
+    <p>Discord Development • Automation • Community Management • Learning Programming</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>
+      Hi, I’m <strong>Bando</strong>. I’m starting my journey in programming (learning Luau for Roblox) 
+      and I specialize in Discord server development, automation, and management.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>🛠️ What I Do</h2>
+    <ul>
+      <li>⚡ Discord Server Setup (roles, channels, permissions)</li>
+      <li>🤖 Automation & Moderation (bots, auto-roles)</li>
+      <li>🌱 Community Growth & Management</li>
+      <li>🎮 Learning Roblox Scripting (Luau)</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>📂 Projects</h2>
+    <ul>
+      <li>📌 Managed & developed servers with 5,000+ members</li>
+      <li>📌 Built custom automation systems</li>
+      <li>📌 Currently working on Roblox game <em>“Get Stronger”</em></li>
+    </ul>
+    <a href="#contact" class="btn">See More</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>📞 Contact</h2>
+    <p>Discord: <strong>@YourDiscordName</strong></p>
+    <p>Email: <a href="mailto:bandodev@gmail.com">bandodev@gmail.com</a></p>
+    <a href="mailto:bandodev@gmail.com" class="btn">Send Email</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Bando | Portfolio
+  </footer>
+
+</body>
+</html>
